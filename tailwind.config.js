@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   mode: "jit",
   content: [
@@ -7,8 +9,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary": "#AD9E57",
-        "secundary": "#414141",
+        "primary": "#67a6b8",
+        "secundary": "#3e6e78",
+      },
+      fonFamily: {
+        'jost': ['"Jost", "sans-serif'],
       }
     },
   },

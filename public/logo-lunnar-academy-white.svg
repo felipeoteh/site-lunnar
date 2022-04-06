@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="979" height="268.25" viewBox="0 0 979 268.25">
+  <g id="logo-lunnar-academy-white" transform="translate(-471 -142.5)">
+    <text id="lunnar.academy" transform="translate(471 356.75)" fill="#fff" font-size="143" font-family="Jost" font-weight="300"><tspan x="0" y="0">lunnar.</tspan><tspan y="0" font-weight="700">academy</tspan></text>
+    <g id="video" transform="translate(1210.026 143.124)">
+      <path id="Caminho_1" data-name="Caminho 1" d="M67.714,7,16,43.938,67.714,80.877Z" transform="translate(95.815 12.724)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="11"/>
+      <rect id="Retângulo_1" data-name="Retângulo 1" width="111.102" height="103.5" rx="2" transform="translate(1 4.876)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="11"/>
+    </g>
+  </g>
+</svg>

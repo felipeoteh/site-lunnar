@@ -14,3 +14,7 @@
 .loginbutton:hover ul{
   display: flex;
 }
+
+html{
+  scroll-behavior: smooth;
+}

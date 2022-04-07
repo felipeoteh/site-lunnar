@@ -1,9 +1,10 @@
 import Link from "next/link"
 import { FiChevronDown } from "react-icons/fi"
 
-export default function Header(){
+export default function Header( {isScroll} ){
     return(
-        <header className="text-xl font-normal flex p-4 px-12 justify-between z-10">
+        <header className={` ${isScroll ? "bg-primary" : null}
+            text-xl font-normal flex p-4 px-12 justify-between z-10 fixed w-screen`}>
 
             <div>
                 <Link href="/">

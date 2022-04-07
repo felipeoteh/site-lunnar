@@ -1,11 +1,13 @@
+import { useEffect } from "react";
 import Link from "next/link"
 
 export default function Banner(){
+
     return(
         <>
 
-            <div className="
-                flex items-center bg-[url('/bg-intro-site.jpeg')] h-screen w-screen fixed top-0 index-0 px-12
+            <div className="snap-start
+                flex items-center bg-[url('/bg-intro-site.jpeg')] h-screen w-screen index-0 px-12
             " >
 
                 <div className="w-1/2">

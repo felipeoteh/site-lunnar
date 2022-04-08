@@ -18,3 +18,30 @@
 html{
   scroll-behavior: smooth;
 }
+
+.slick-dots{
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative !important;
+}
+
+.slick-dots li button:before{
+  display: none !important;
+}
+
+.slick-dots li.slick-active{
+  width: 1.3rem !important;
+  height: 1.3rem !important;
+  background: #67a6b8;
+}
+
+.slick-dots li{
+  width: 1rem !important;
+  height: 1rem !important;
+  border: thin solid #fff;
+  border-radius: 100%;
+  transition: all ease .3s;
+  font-size: 0;
+  display: flex;
+}

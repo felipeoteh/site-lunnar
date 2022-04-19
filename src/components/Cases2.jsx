@@ -9,6 +9,16 @@ export default function Cases2(){
 
     const [ acordion, setAcordion ] = useState(1)
 
+    function changeAcordion(position){
+        if (position < 1){
+            setAcordion(3)
+        }else if (position > 3){
+            setAcordion(1)
+        }else(
+            setAcordion(position)
+        )
+    }
+
     const settings = {
         dots: true,
         arrows: false,
@@ -29,56 +39,61 @@ export default function Cases2(){
                 justify-between text-white gap-12
             " >
 
-            <h1 className="text-7xl
+            <h1 className="text-7xl hidden
                 text-white absolute top-[15vh] left-[3rem]">
                 Cases
             </h1>
 
-            <div className="w-1/3 flex">
+            <div className="w-1/5 flex">
 
-                <div className={`w-2/3 flex flex-col gap-8`}>
-                    <img onClick={ () => { setAcordion(1) } } 
+                <div className={`w-full flex items-center flex-col gap-8`}>
+                    <img onClick={ () => { changeAcordion(1) } } 
                         src="/logo-lunnar-shop-white.svg" className={` 
                         ${ (acordion == 1) ? ("acordionOpen opacity-100") : "opacity-50" } 
-                        cursor-pointer hover:opacity-100 transition-all`} />
+                        cursor-pointer hover:opacity-100 transition-all `} />
                     
-                    <img onClick={ () => { setAcordion(2) } }
+                    <img onClick={ () => { changeAcordion(2) } }
                         src="/logo-lunnar-academy-white.svg" className={`
                         ${ (acordion == 2) ? ("acordionOpen opacity-100") : "opacity-50" }
-                         cursor-pointer hover:opacity-100 transition-all`} />
+                         cursor-pointer hover:opacity-100 transition-all `} />
 
-                    <img onClick={ () => { setAcordion(3) } }
-                        src="/logo-lunnar-dev-white.svg" className={`
+                    <svg onClick={ () => { changeAcordion(3) } }
+                        className={`
                         ${ (acordion == 3) ? ("acordionOpen opacity-100") : "opacity-50" }
-                        cursor-pointer hover:opacity-100 transition-all`}/>
-                </div>
-
-                <div className={`w-1/3 flex flex-col items-end justify-center gap-4`}>
-                    
-                    <div onClick={ () => { setAcordion(acordion - 1) } }
-                        className="flex items-center justify-center cursor-pointer hover:bg-primary mr-4
-                        w-10 h-10 p-2 border rounded transition-all border-primary">
-                        <FiChevronUp className="w-8 h-8"/>
-                    </div>
-
-                    <div onClick={ () => { setAcordion(acordion + 1) } }
-                        className="flex items-center justify-center cursor-pointer hover:bg-primary mr-4
-                        w-10 h-10 p-2 border rounded transition-all border-primary">
-                        <FiChevronDown className="w-8 h-8"/>
-                    </div>
+                        cursor-pointer hover:opacity-100 transition-all `}
+                        id="logo-lunnar-dev-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 945 299">
+                        <text id="lunnar" transform="translate(0 182)" fill="#fff" font-size="170" font-family="Jost" font-weight="300" letter-spacing="0.07em"><tspan x="0" y="0">LUNNAR</tspan></text>
+                        <text id="_dev_" data-name="&lt;/dev&gt;" transform="translate(566 258)" fill="#fff" font-size="110" font-family="Jost" font-weight="500" letter-spacing="-0.07em"><tspan x="0" y="0">&lt;/DEV&gt;</tspan></text>
+                    </svg>
 
                 </div>
-                
+    
             </div>
 
-            <div className="flex-1 w-2/3 relative flex items-center">
+            <div className={`w-[5rem] flex flex-col items-center justify-center gap-4`}>
+                    
+                <div onClick={ () => { changeAcordion(acordion - 1) } }
+                    className="flex items-center justify-center cursor-pointer hover:bg-primary 
+                    w-10 h-10 p-2 border rounded transition-all border-primary">
+                    <FiChevronUp className="w-8 h-8"/>
+                </div>
+
+                <div onClick={ () => { changeAcordion(acordion + 1) } }
+                    className="flex items-center justify-center cursor-pointer hover:bg-primary 
+                    w-10 h-10 p-2 border rounded transition-all border-primary">
+                    <FiChevronDown className="w-8 h-8"/>
+                </div>
+
+            </div>
+
+            <div className="flex-1 w-4/5 relative flex items-center">
 
                 <div className={`
                     ${ (acordion == 1) ? ("opacity-100 visible") : "opacity-0 invisible" }
                     transition-all absolute
                 `}>
                     
-                    <div>
+                    <div className="flex flex-col gap-2">
 
                         <img className="w-[13rem] mb-4" src="https://ninho.digital/wp-content/themes/ninho_site/assets/img/logo_branca.svg" alt="" />
 
@@ -93,7 +108,7 @@ export default function Cases2(){
                         </p>
 
                         <div className="text-2xl hover:opacity-90 cursor-pointer
-                            p-4 bg-primary rounded transition-all mt-6 w-1/2 flex items-center gap-2 justify-center" >
+                            p-4 bg-primary rounded transition-all mt-6 w-1/3 flex items-center gap-2 justify-center" >
                             Quero ser Case <GoRocket className="w-8 h-8"/>
                         </div>
 
@@ -121,7 +136,7 @@ export default function Cases2(){
                     </p>
 
                     <div className="text-2xl hover:opacity-90 cursor-pointer
-                        p-4 bg-primary rounded transition-all mt-6 w-1/2 flex items-center gap-2 justify-center" >
+                        p-4 bg-primary rounded transition-all mt-6 w-1/3 flex items-center gap-2 justify-center" >
                         Quero ser Case <GoRocket className="w-8 h-8"/>
                     </div>
 
@@ -150,7 +165,7 @@ export default function Cases2(){
                             </p>
 
                             <div className="text-2xl hover:opacity-90 cursor-pointer
-                                p-4 bg-primary rounded transition-all mt-6 w-1/2 flex items-center gap-2 justify-center" >
+                                p-4 bg-primary rounded transition-all mt-6 w-1/3 flex items-center gap-2 justify-center" >
                                 Quero ser Case <GoRocket className="w-8 h-8"/>
                             </div>
 
@@ -167,11 +182,11 @@ export default function Cases2(){
                             </p>
 
                             <p className="text-sm mt-4">
-                                Dandy / <small>Cofundadora Agência Ninho</small>
+                                Dandy / <small>COO Ninho Digital</small>
                             </p>
 
                             <div className="text-2xl hover:opacity-90 cursor-pointer
-                                p-4 bg-primary rounded transition-all mt-6 w-1/2 flex items-center gap-2 justify-center" >
+                                p-4 bg-primary rounded transition-all mt-6 w-1/3 flex items-center gap-2 justify-center" >
                                 Quero ser Case <GoRocket className="w-8 h-8"/>
                             </div>
 

@@ -2,6 +2,20 @@ import Link from "next/link"
 import { FiChevronRight } from "react-icons/fi"
 import { GoRocket } from "react-icons/go"
 
+import { motion } from "framer-motion"
+
+
+export const MyComponent = ( {children} ) => (
+    <motion.div
+        animate={{ 
+          y: [1, 20, 1] 
+        }}
+      transition={{ repeat: Infinity, duration: 5 }}
+    >
+        {children}
+    </motion.div>
+  )
+
 export default function Services(){
     return(
         <>
@@ -17,21 +31,35 @@ export default function Services(){
 
                 <img src="/terra.png" className="absolute bottom-0 left-0 h-[35rem] z-0" />
 
-                <ul className="flex items-center justify-around w-full text-2xl h-[25rem] z-10
-                    bg-[url('/risco.png')] bg-contain bg-center bg-no-repeat">
-                    <li className="relative transition-all hover:border-primary p-2 hover:mt-[13.4rem] hover:rotate-[-4deg]
-                     border-2 border-dashed border-transparent rounded pl-4 gap-2
-                        cursor-pointer mt-[14.4rem] ml-[5rem] flex items-center">
-                        <div className="w-6 h-6 border-4 border-white border-dashed rounded-full absolute top-[-1.2rem] left-[-1rem]"></div>
-                        Para Vender Online <GoRocket/>
-                    </li>
-                    <li className="relative transition-all hover:border-primary p-2 hover:rotate-[-4deg]
-                     border-2 border-dashed border-transparent rounded pl-4 hover:mt-[-16.4rem]
-                        cursor-pointer mt-[-15rem] flex items-center gap-2">
-                        <div className="
-                            w-6 h-6  border-4 border-white border-dashed rounded-full absolute top-[-1.2rem] left-[-1rem]"></div>
-                        Para Aumentar o Lucro <GoRocket/>
-                    </li>
+                <ul className="flex items-center justify-around w-full z-10 h-[15rem]
+                    ">
+                    <MyComponent>
+                        <img 
+                            src="/logo-lunnar-shop-white.svg" className={` 
+                            w-[15rem] self-end
+                            cursor-pointer transition-all `} /> 
+                    </MyComponent>
+
+                    <MyComponent>
+                        <img
+                        src="/logo-lunnar-academy-white.svg" className={`
+                        w-[15rem]
+                        cursor-pointer hover:opacity-100 transition-all `} />
+                    </MyComponent>
+
+
+                    <MyComponent>
+                        <svg 
+                            className={`
+                            w-[15rem] self-start
+                            cursor-pointer hover:opacity-100 transition-all `}
+                            id="logo-lunnar-dev-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 945 299">
+                            <text id="lunnar" transform="translate(0 182)" fill="#fff" font-size="170" font-family="Jost" font-weight="300" letter-spacing="0.07em"><tspan x="0" y="0">LUNNAR</tspan></text>
+                            <text id="_dev_" data-name="&lt;/dev&gt;" transform="translate(566 258)" fill="#fff" font-size="110" font-family="Jost" font-weight="500" letter-spacing="-0.07em"><tspan x="0" y="0">&lt;/DEV&gt;</tspan></text>
+                        </svg>
+                    </MyComponent>
+                          
+
                 </ul>
                 
                 <img src="/lua.png" className="absolute top-0 right-0 h-[60rem] z-0" />

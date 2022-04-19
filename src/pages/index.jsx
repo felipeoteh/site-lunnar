@@ -15,7 +15,6 @@ export default function Home() {
       <section id="boxPai" className="scroll-smooth boxPai snap-y h-screen snap-mandatory overflow-y-scroll">
         <Banner/>
         <Services/>
-        <Cases/>
         <Cases2/>
 
       </section>

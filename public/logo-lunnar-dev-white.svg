@@ -1,6 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="945" height="299" viewBox="0 0 945 299">
-  <g id="logo-lunnar-dev-white" transform="translate(-488 -115)">
-    <text id="lunnar" transform="translate(488 297)" fill="#fff" font-size="170" font-family="Jost" font-weight="300" letter-spacing="0.07em"><tspan x="0" y="0">LUNNAR</tspan></text>
-    <text id="_dev_" data-name="&lt;/dev&gt;" transform="translate(1054 373)" fill="#fff" font-size="110" font-family="Jost" font-weight="500" letter-spacing="-0.07em"><tspan x="0" y="0">&lt;/DEV&gt;</tspan></text>
-  </g>
+<svg id="logo-lunnar-dev-white" xmlns="http://www.w3.org/2000/svg" width="945" height="299" viewBox="0 0 945 299">
+  <text id="lunnar" transform="translate(0 182)" fill="#fff" font-size="170" font-family="Jost" font-weight="300" letter-spacing="0.07em"><tspan x="0" y="0">LUNNAR</tspan></text>
+  <text id="_dev_" data-name="&lt;/dev&gt;" transform="translate(566 258)" fill="#fff" font-size="110" font-family="Jost" font-weight="500" letter-spacing="-0.07em"><tspan x="0" y="0">&lt;/DEV&gt;</tspan></text>
 </svg>

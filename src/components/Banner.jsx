@@ -1,18 +1,20 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link"
 
 export default function Banner(){
 
+    
+
     return(
         <>
 
-            <div className="snap-start
+            <div id="banner" className="snap-start
                 flex items-center bg-[url('/bg-intro-site.jpeg')] h-screen w-screen index-0 px-12
             " >
 
                 <div className="w-1/2">
-                    <h1 className="text-white text-6xl font-extralight">
-                        Conectamos sua empresa na tecnologia necessária para vender online e aumentar o engajamento do time sem entender nada de tecnologia!
+                    <h1 className="text-white text-7xl font-extralight">
+                        Acoplamos tecnologia em empresas para aumentar o lucro operacional.
                     </h1>
                     <Link href="#services">
                         <p className="cursor-pointer hover:opacity-90 transition-all w-1/3

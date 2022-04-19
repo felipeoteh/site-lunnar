@@ -13,17 +13,17 @@ export default function Header( {isScroll} ){
             </div>
 
             <ul className="flex gap-4 items-center text-white">
-                <Link href="#services">
-                    <li>Serviços</li>
+                <Link href="#solutions">
+                    <li>Soluções</li>
                 </Link>
                 <Link href="#cases">
                     <li>Cases</li>
                 </Link>
+                <Link href="#about">
+                    <li>Ecossistema Lunnar</li>
+                </Link>
                 <Link href="#contato">
                     <li>Contato</li>
-                </Link>
-                <Link href="#about">
-                    <li>Sobre a Lunnar</li>
                 </Link>
                 <li className="loginbutton transition-all relative
                     cursor-pointer p-2 border border-primary rounded px-4 flex gap-1 items-center">

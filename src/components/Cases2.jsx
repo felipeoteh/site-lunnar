@@ -35,17 +35,17 @@ export default function Cases2(){
                 <div className={`w-full flex items-center flex-col gap-8`}>
                     <img onClick={ () => { changeAcordion(1) } } 
                         src="/logo-lunnar-shop-white.svg" className={` 
-                        ${ (acordion == 1) ? (`acordionOpen opacity-100`) : "opacity-50" } 
+                        ${ (acordion == 1) ? "acordionOpen opacity-100" : "opacity-50" } 
                         cursor-pointer hover:opacity-100 transition-all `} />
                     
                     <img onClick={ () => { changeAcordion(2) } }
                         src="/logo-lunnar-academy-white.svg" className={`
-                        ${ (acordion == 2) ? (`acordionOpen opacity-100`) : "opacity-50" }
+                        ${ (acordion == 2) ? "acordionOpen opacity-100" : "opacity-50" }
                          cursor-pointer hover:opacity-100 transition-all `} />
 
                     <svg onClick={ () => { changeAcordion(3) } }
                         className={`
-                        ${ (acordion == 3) ? (`acordionOpen opacity-100`) : "opacity-50" }
+                        ${ (acordion == 3) ? "acordionOpen opacity-100" : "opacity-50" }
                         cursor-pointer hover:opacity-100 transition-all `}
                         id="logo-lunnar-dev-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 945 299">
                         <text id="lunnar" transform="translate(0 182)" fill="#fff" fontSize="170" fontFamily="Jost" fontWeight="300" letterSpacing="0.07em"><tspan x="0" y="0">LUNNAR</tspan></text>
@@ -75,7 +75,7 @@ export default function Cases2(){
             <div className="flex-1 w-4/5 relative flex items-center">
 
                 <div className={`
-                    ${ (acordion == 1) ? (`opacity-100 visible`) : "opacity-0 invisible" }
+                    ${ (acordion == 1) ? "opacity-100 visible" : "opacity-0 invisible" }
                     transition-all absolute
                 `}>
                     
@@ -103,7 +103,7 @@ export default function Cases2(){
                 </div>
 
                 <div className={`
-                    ${ (acordion == 2) ? (`opacity-100 visible`) : "opacity-0 invisible" }
+                    ${ (acordion == 2) ? "opacity-100 visible" : "opacity-0 invisible" }
                     transition-all absolute
                 `}>
                     
@@ -132,7 +132,7 @@ export default function Cases2(){
                 </div>
 
                 <div className={`
-                    ${ (acordion == 3) ? (`opacity-100 visible`) : "opacity-0 invisible" }
+                    ${ (acordion == 3) ? "opacity-100 visible" : "opacity-0 invisible" }
                     transition-all absolute w-full
                 `}>
                     {/* <Slider>

@@ -18,6 +18,8 @@ export default function Cases2(){
         )
     } 
 
+    const acordion1 = acordion == 1
+
     return(
         <>
             <div id="cases" className="snap-start relative
@@ -75,7 +77,7 @@ export default function Cases2(){
             <div className="flex-1 w-4/5 relative flex items-center">
 
                 <div className={`
-                    ${ (acordion == 1) ? ("opacity-100 visible") : ("opacity-0 invisible") }
+                    ${ acordion1 ? ("opacity-100 visible") : ("opacity-0 invisible") }
                     transition-all absolute `}>
                     
                     <div className="flex flex-col gap-2">

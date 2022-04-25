@@ -30,7 +30,7 @@ export default function Cases2(){
                 Cases
             </h1>
 
-            <div className="w-1/5 flex">
+            {/* <div className="w-1/5 flex">
 
                 <div className={`w-full flex items-center flex-col gap-8`}>
                     <img onClick={ () => { changeAcordion(1) } } 
@@ -135,7 +135,7 @@ export default function Cases2(){
                     ${ (acordion == 3) ? "opacity-100 visible" : "opacity-0 invisible" }
                     transition-all absolute w-full
                 `}>
-                    {/* <Slider>
+                    
                         <div>
 
                             <img className="w-[13rem] mb-4" src="https://agencianascer.com.br/wp-content/uploads/2022/03/logo-nascer.png" alt="" />
@@ -178,11 +178,11 @@ export default function Cases2(){
 
                         </div>
 
-                    </Slider> */}
+                    
                 </div>
 
                               
-            </div>
+            </div> */}
                 
 
             </div> 

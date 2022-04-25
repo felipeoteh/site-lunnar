@@ -19,10 +19,10 @@ export default function Header( {isScroll} ){
                 <Link href="#cases">
                     <li>Cases</li>
                 </Link>
-                <Link href="#about">
+                <Link href="#cluster-lunnar">
                     <li>Ecossistema Lunnar</li>
                 </Link>
-                <Link href="#contato">
+                <Link href="#contact">
                     <li>Contato</li>
                 </Link>
                 <li className="loginbutton transition-all relative

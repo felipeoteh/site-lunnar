@@ -2,37 +2,12 @@ import { useEffect, useState } from "react";
 
 import Banner from "../components/Banner";
 import Cases2 from "../components/Cases2";
+import ClusterLunnar from "../components/ClusterLunnar";
+import Contact from "../components/Contato";
 import Header from "../components/Header";
 import Solutions from "../components/Solutions";
 
 export default function Home() {
-
-  
-  const [ scroll, setScroll ] = useState("sem scroll")
-
-    useEffect( () => {
-
-        const solutions = document.querySelector("#banner")
-        const position = solutions.getBoundingClientRect()
-        console.log(position)
-    
-      }, [scroll])
-
-    useEffect( () => {
-
-        const boxPai = document.querySelector("#boxPai")
-
-        const body = document.querySelector("body")
-
-        function posicaoScroll(){
-          setScroll("fiz scroll")
-        }
-
-        boxPai.addEventListener('scroll', posicaoScroll )
-
-    }, [] )
-
-    console.log("scroll", scroll)
 
   return (
     <>
@@ -42,7 +17,8 @@ export default function Home() {
         <Banner/>
         <Solutions/>
         <Cases2/>
-
+        <ClusterLunnar/>
+        <Contact/>
       </section>
     </>
   )

@@ -1,9 +1,21 @@
 import Link from "next/link"
 import { FiChevronRight, FiChevronDown, FiChevronUp } from "react-icons/fi"
 import { GoRocket } from "react-icons/go"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 import Slider from "react-slick"
+
+import { useIsPresent } from "framer-motion"
+
+    export const Component = () => {
+    const isPresent = useIsPresent()
+
+    useEffect(() => {
+            !isPresent && console.log("I've been removed!")
+        }, [isPresent])
+
+        return <div />
+    }
 
 export default function Cases2(){
 
@@ -17,7 +29,7 @@ export default function Cases2(){
         }else(
             setAcordion(position)
         )
-    }
+    } 
 
     const settings = {
         dots: true,
@@ -38,6 +50,7 @@ export default function Cases2(){
                 flex items-center bg-[url('/bg-cases.jpg')] h-screen w-screen index-0 px-12
                 justify-between text-white gap-12
             " >
+                <Component/>
 
             <h1 className="text-7xl hidden
                 text-white absolute top-[15vh] left-[3rem]">

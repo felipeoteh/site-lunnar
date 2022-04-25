@@ -76,7 +76,7 @@ export default function Cases2(){
 
             <div className="flex-1 w-4/5 relative flex items-center">
 
-            {/* ${ acordion1 ? "opacity-100 visible" : "opacity-0 invisible" } */}
+            
 
                 <div className={`
                     opacity-100 visible

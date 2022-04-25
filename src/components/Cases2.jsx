@@ -58,7 +58,7 @@ export default function Cases2(){
     
             </div>
 
-            <div className={`w-[5rem] flex flex-col items-center justify-center gap-4`}>
+            <div className="w-[5rem] flex flex-col items-center justify-center gap-4">
                     
                 <div onClick={ () => { changeAcordion(acordion - 1) } }
                     className="flex items-center justify-center cursor-pointer hover:bg-primary 

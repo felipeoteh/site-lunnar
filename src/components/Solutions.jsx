@@ -2,7 +2,7 @@ import Link from "next/link"
 import { AiOutlinePlusCircle, AiOutlineCloseCircle } from "react-icons/ai"
 
 import { motion } from "framer-motion"
-import {useState} from "react"
+import { useState } from "react"
 
 export const MyComponent = ( {children} ) => (
     <motion.div
@@ -37,7 +37,7 @@ export default function Services(){
 
                     <div onClick={ () => setService(1) } className="self-end cursor-pointer">
                         <MyComponent>
-                            <div  className="flex items-center gap-2">
+                            <div className="flex items-center gap-2">
                                 <img 
                                 src="/logo-lunnar-shop-white.svg" className={` 
                                 w-[15rem] 
@@ -67,8 +67,8 @@ export default function Services(){
                                     w-[15rem]
                                     cursor-pointer hover:opacity-100 transition-all `}
                                     id="logo-lunnar-dev-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 945 299">
-                                    <text id="lunnar" transform="translate(0 182)" fill="#fff" font-size="170" font-family="Jost" font-weight="300" letter-spacing="0.07em"><tspan x="0" y="0">LUNNAR</tspan></text>
-                                    <text id="_dev_" data-name="&lt;/dev&gt;" transform="translate(566 258)" fill="#fff" font-size="110" font-family="Jost" font-weight="500" letter-spacing="-0.07em"><tspan x="0" y="0">&lt;/DEV&gt;</tspan></text>
+                                    <text id="lunnar" transform="translate(0 182)" fill="#fff" fontSize="170" fontFamily="Jost" fontWeight="300" letterSpacing="0.07em"><tspan x="0" y="0">LUNNAR</tspan></text>
+                                    <text id="_dev_" data-name="&lt;/dev&gt;" transform="translate(566 258)" fill="#fff" fontSize="110" fontFamily="Jost" fontWeight="500" letterSpacing="-0.07em"><tspan x="0" y="0">&lt;/DEV&gt;</tspan></text>
                                 </svg>
                                 <AiOutlinePlusCircle className="hover:text-primary transition-all w-6 h-6"/>
                             </div>
@@ -99,7 +99,7 @@ export default function Services(){
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus aliquet interdum. Nunc bibendum enim tortor, ac pharetra felis sollicitudin vel. Ut a finibus enim. 
                             </p>
 
-                            <Link href="">
+                            <Link href="/">
                                 <p className="cursor-pointer hover:bg-white hover:text-primary transition-all w-1/3 border-2
                                     flex items-center justify-center mt-2 rounded bg-primary text-white px-2 py-2 font-medium">
                                     Saiba Como
@@ -136,8 +136,8 @@ export default function Services(){
                                     w-[15rem]
                                     cursor-pointer hover:opacity-100 transition-all `}
                                     id="logo-lunnar-dev-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 945 299">
-                                    <text id="lunnar" transform="translate(0 182)" fill="#fff" font-size="170" font-family="Jost" font-weight="300" letter-spacing="0.07em"><tspan x="0" y="0">LUNNAR</tspan></text>
-                                    <text id="_dev_" data-name="&lt;/dev&gt;" transform="translate(566 258)" fill="#fff" font-size="110" font-family="Jost" font-weight="500" letter-spacing="-0.07em"><tspan x="0" y="0">&lt;/DEV&gt;</tspan></text>
+                                    <text id="lunnar" transform="translate(0 182)" fill="#fff" fontSize="170" fontFamily="Jost" fontWeight="300" letterSpacing="0.07em"><tspan x="0" y="0">LUNNAR</tspan></text>
+                                    <text id="_dev_" data-name="&lt;/dev&gt;" transform="translate(566 258)" fill="#fff" fontSize="110" fontFamily="Jost" fontWeight="500" letterSpacing="-0.07em"><tspan x="0" y="0">&lt;/DEV&gt;</tspan></text>
                             </svg>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus aliquet interdum. Nunc bibendum enim tortor, ac pharetra felis sollicitudin vel. Ut a finibus enim. 

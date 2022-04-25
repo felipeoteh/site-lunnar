@@ -1,21 +1,8 @@
-import Link from "next/link"
-import { FiChevronRight, FiChevronDown, FiChevronUp } from "react-icons/fi"
+
+import {  FiChevronDown, FiChevronUp } from "react-icons/fi"
 import { GoRocket } from "react-icons/go"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
-//import Slider from "react-slick"
-
-import { useIsPresent } from "framer-motion"
-
-    export const Component = () => {
-    const isPresent = useIsPresent()
-
-    useEffect(() => {
-            !isPresent && console.log("I've been removed!")
-        }, [isPresent])
-
-        return <div />
-    }
 
 export default function Cases2(){
 
@@ -31,26 +18,12 @@ export default function Cases2(){
         )
     } 
 
-    const settings = {
-        dots: true,
-        arrows: false,
-        infinite: true, 
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 400,
-        autoplaySpeed: 3000,
-        cssEase: "ease"
-    }
-
     return(
         <>
             <div id="cases" className="snap-start relative
                 flex items-center bg-[url('/bg-cases.jpg')] h-screen w-screen index-0 px-12
                 justify-between text-white gap-12
-            " >
-                <Component/>
+            " >                
 
             <h1 className="text-7xl hidden
                 text-white absolute top-[15vh] left-[3rem]">
@@ -75,8 +48,8 @@ export default function Cases2(){
                         ${ (acordion == 3) ? ("acordionOpen opacity-100") : "opacity-50" }
                         cursor-pointer hover:opacity-100 transition-all `}
                         id="logo-lunnar-dev-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 945 299">
-                        <text id="lunnar" transform="translate(0 182)" fill="#fff" font-size="170" font-family="Jost" font-weight="300" letter-spacing="0.07em"><tspan x="0" y="0">LUNNAR</tspan></text>
-                        <text id="_dev_" data-name="&lt;/dev&gt;" transform="translate(566 258)" fill="#fff" font-size="110" font-family="Jost" font-weight="500" letter-spacing="-0.07em"><tspan x="0" y="0">&lt;/DEV&gt;</tspan></text>
+                        <text id="lunnar" transform="translate(0 182)" fill="#fff" fontSize="170" fontFamily="Jost" fontWeight="300" letterSpacing="0.07em"><tspan x="0" y="0">LUNNAR</tspan></text>
+                        <text id="_dev_" data-name="&lt;/dev&gt;" transform="translate(566 258)" fill="#fff" fontSize="110" fontFamily="Jost" fontWeight="500" letterSpacing="-0.07em"><tspan x="0" y="0">&lt;/DEV&gt;</tspan></text>
                     </svg>
 
                 </div>

@@ -76,8 +76,10 @@ export default function Cases2(){
 
             <div className="flex-1 w-4/5 relative flex items-center">
 
+            {/* ${ acordion1 ? "opacity-100 visible" : "opacity-0 invisible" } */}
+
                 <div className={`
-                    ${ acordion1 ? "opacity-100 visible" : "opacity-0 invisible" }
+                    opacity-100 visible
                     transition-all absolute `}>
                     
                     <div className="flex flex-col gap-2">

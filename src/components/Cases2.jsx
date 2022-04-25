@@ -30,9 +30,9 @@ export default function Cases2(){
                 Cases
             </h1>
 
-            {/* <div className="w-1/5 flex">
+            <div className="w-1/5 flex">
 
-                <div className={`w-full flex items-center flex-col gap-8`}>
+                {/* <div className={`w-full flex items-center flex-col gap-8`}>
                     <img onClick={ () => { changeAcordion(1) } } 
                         src="/logo-lunnar-shop-white.svg" className={` 
                         ${ (acordion == 1) ? "acordionOpen opacity-100" : "opacity-50" } 
@@ -52,7 +52,7 @@ export default function Cases2(){
                         <text id="_dev_" data-name="&lt;/dev&gt;" transform="translate(566 258)" fill="#fff" fontSize="110" fontFamily="Jost" fontWeight="500" letterSpacing="-0.07em"><tspan x="0" y="0">&lt;/DEV&gt;</tspan></text>
                     </svg>
 
-                </div>
+                </div> */}
     
             </div>
 
@@ -182,7 +182,7 @@ export default function Cases2(){
                 </div>
 
                               
-            </div> */}
+            </div>
                 
 
             </div> 

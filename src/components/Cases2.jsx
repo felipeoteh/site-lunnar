@@ -3,7 +3,7 @@ import { FiChevronRight, FiChevronDown, FiChevronUp } from "react-icons/fi"
 import { GoRocket } from "react-icons/go"
 import { useState, useEffect } from "react"
 
-import Slider from "react-slick"
+//import Slider from "react-slick"
 
 import { useIsPresent } from "framer-motion"
 
@@ -162,7 +162,7 @@ export default function Cases2(){
                     ${ (acordion == 3) ? ("opacity-100 visible") : "opacity-0 invisible" }
                     transition-all absolute w-full
                 `}>
-                    <Slider>
+                    {/* <Slider>
                         <div>
 
                             <img className="w-[13rem] mb-4" src="https://agencianascer.com.br/wp-content/uploads/2022/03/logo-nascer.png" alt="" />
@@ -205,7 +205,7 @@ export default function Cases2(){
 
                         </div>
 
-                    </Slider>
+                    </Slider> */}
                 </div>
 
                               

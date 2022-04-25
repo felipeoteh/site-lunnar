@@ -56,3 +56,8 @@ html{
   -webkit-text-stroke: #AD9E57;
   -webkit-text-stroke-width: 3px;
 }
+
+.titleSection.about{
+  -webkit-text-stroke: #00707C;
+  -webkit-text-stroke-width: 3px;
+}

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
+import About from "../components/About";
 import Banner from "../components/Banner";
 import Cases2 from "../components/Cases2";
-import ClusterLunnar from "../components/ClusterLunnar";
 import Contact from "../components/Contato";
 import Solutions from "../components/Solutions";
 
@@ -14,7 +14,7 @@ export default function Home() {
         <Banner/>
         <Solutions/>
         <Cases2/>
-        <ClusterLunnar/>
+        <About/>
         <Contact/>
       </section>
     </>

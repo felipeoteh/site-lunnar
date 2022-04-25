@@ -12,17 +12,17 @@ export default function Services(){
     return(
         <>
             <div id="solutions" className="snap-start relative
-                flex items-center bg-white h-screen w-screen index-0
-                justify-between text-white
+                flex items-start justify-center bg-white h-screen w-screen index-0
+                 text-white flex-col gap-16
             " >
 
                 <h1 className="titleSection solutions text-[8.75rem] uppercase text-bold 
-                text-transparent absolute top-[6rem] left-[-15px] ">
+                text-transparent ml-[-15px] ">
                     Soluções
                 </h1>
 
 
-                <ul className="flex mb-[-10rem] items-stretch w-screen font-light z-10 h-[19rem] text-[1.9rem] leading-none
+                <ul className="flex items-stretch w-screen font-light z-10 h-[19rem] text-[1.9rem] leading-none
                     ">
                         <li className="bg-shop w-full flex items-center p-8 relative cursor-pointer">
                             <p className="uppercase">

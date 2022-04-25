@@ -34,16 +34,16 @@ export default function Cases2(){
     return(
         <>
             <div id="cases" className="snap-start relative
-                flex items-center bg-[#0092A3] h-screen w-screen index-0 px-12
-                justify-end text-white gap-12
+                flex items-start bg-[#0092A3] h-screen w-screen index-0
+                justify-center text-white flex-col gap-12
             " >                
 
             <h1 className="titleSection text-[8.75rem] uppercase text-bold 
-                text-transparent absolute top-[6rem] left-[-15px]">
+                text-transparent mt-[-10rem] ml-[-15px]">
                 Cases
             </h1>
 
-            <div className="flex w-4/5 mb-[-10rem]">
+            <div className="flex w-4/5 mb-[-10rem] self-end pr-12">
                 
                 <div className="w-1/5 flex">
 

@@ -11,6 +11,9 @@ module.exports = {
       colors: {
         "primary": "#07B3C7",
         "secundary": "#3e6e78",
+        "shop": "#AD9E57",
+        "academy": "#064B68",
+        "dev": "#605FAC"
       },
       fonFamily: {
         'jost': ['"Jost", "sans-serif'],

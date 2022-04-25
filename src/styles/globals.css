@@ -46,3 +46,13 @@ html{
   display: flex;
 }
 
+.titleSection{
+  -webkit-text-stroke: #fff;
+  -webkit-text-stroke-width: 3px;
+}
+
+
+.titleSection.solutions{
+  -webkit-text-stroke: #AD9E57;
+  -webkit-text-stroke-width: 3px;
+}

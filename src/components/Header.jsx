@@ -29,19 +29,19 @@ export default function Header( {isScroll} ){
                 transition-all  text-white text-3xl font-light`}>
 
                 <MdClose onClick={ () => setIsOpen(isOpen => !isOpen) }
-                    className="w-10 h-10 absolute top-4 right-4 "/>
+                    className="w-10 h-10 absolute top-4 right-4 cursor-pointer"/>
 
                 <Link href="#solutions">
-                    <li onClick={ () => setIsOpen(isOpen => !isOpen) }>Soluções</li>
+                    <li className="cursor-pointer" onClick={ () => setIsOpen(isOpen => !isOpen) }>Soluções</li>
                 </Link>
                 <Link href="#cases">
-                    <li onClick={ () => setIsOpen(isOpen => !isOpen) }>Cases</li>
+                    <li className="cursor-pointer" onClick={ () => setIsOpen(isOpen => !isOpen) }>Cases</li>
                 </Link>
                 <Link href="#cluster-lunnar">
-                    <li onClick={ () => setIsOpen(isOpen => !isOpen) }>Sobre a Lunnar</li>
+                    <li className="cursor-pointer" onClick={ () => setIsOpen(isOpen => !isOpen) }>Sobre a Lunnar</li>
                 </Link>
                 <Link href="#contact">
-                    <li onClick={ () => setIsOpen(isOpen => !isOpen) }>Contato</li>
+                    <li className="cursor-pointer" onClick={ () => setIsOpen(isOpen => !isOpen) }>Contato</li>
                 </Link>
                 
             </ul>
@@ -51,7 +51,7 @@ export default function Header( {isScroll} ){
                 <FiMenu className="w-10 h-10 p-2 rounded-full bg-primary cursor-pointer"
                     onClick={ () => setIsOpen(isOpen => !isOpen) }/>
 
-                <li>
+                <li className="hidden">
                     <FiToggleLeft className="
                         p-2 rounded-full bg-primary
                         w-10 h-10 cursor-pointer"/>

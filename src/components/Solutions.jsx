@@ -62,23 +62,23 @@ export default function Services(){
                 </ul>
             </section>
 
-            <section id="lunnar-shop" className="snap-start bg-shop p-12 gap-4
+            <section id="lunnar-shop" className="snap-start bg-shop p-4 md:p-12 gap-4
                     w-screen h-screen flex items-start flex-col justify-center">
 
                 <img src="/logo-lunnar-shop-white.svg" className="max-w-[18rem]"  />
 
-                <p className=" text-2xl font-light">
+                <p className="text-xl md:text-2xl font-light">
                     Vender online se tornou uma necessidade e viabilizar essa canal de vendas em seu negócio está mais acessível que você imagina. Em menos de 30 dias é possível colocar sua loja virtual no ar.
                 </p>
 
                 <h1 className="titleSection services text-[3.5rem] uppercase text-bold 
-                    text-transparent mt-12">
+                    text-transparent mt-4 md:mt-12">
                     Serviços
                 </h1>
 
-                <ul className="flex items-stretch w-screen font-light z-10 gap-8
+                <ul className="flex flex-col md:flex-row items-stretch w-[calc(100vw-2rem)] font-light z-10 gap-8
                     ">
-                    <li className="w-1/3 flex flex-col gap-4 py-4 relative cursor-pointer">
+                    <li className="md:w-1/3 flex flex-col gap-4 md:py-4 relative cursor-pointer">
                         <p className="uppercase flex items-center gap-4 text-[1.9rem] leading-none">
                             <FiShoppingCart/>
                             <span className="font-light"><b>Implantação</b><br/>de e-commerce</span>
@@ -96,7 +96,7 @@ export default function Services(){
                         </Link>
                     </li>
 
-                    <li className="w-1/3 flex flex-col gap-4 py-4 relative cursor-pointer">
+                    <li className="md:w-1/3 flex flex-col gap-4 md:py-4 relative cursor-pointer">
                         <p className="uppercase flex items-center gap-4 text-[1.9rem] leading-none">
                             <FiShoppingBag/>
                             <span className="font-light"><b>Marketplace de</b><br/>Negócios Locais</span>
@@ -116,25 +116,25 @@ export default function Services(){
 
             </section>
 
-            <section id="lunnar-academy" className="snap-start bg-academy p-12 gap-4
+            <section id="lunnar-academy" className="snap-start bg-academy p-4 md:p-12 gap-4
                 w-screen h-screen flex items-start flex-col justify-center">
 
                 <img src="/logo-lunnar-academy-white.svg" className="max-w-[18rem]"  />
 
-                <p className="text-2xl font-light">
+                <p className="text-1xl md:text-2xl font-light">
                     Você sabia que um colaborador desengajado chega a custar 7x o próprio salário ao longo do tempo? 
                     Não deixe isso acontecer na sua empresa! Aumente o engajamento dos seus colaboradores com as soluções de academy 
                     customizado ou no modelo saas. Ideal para aumento de engajamento, gamificação e inventario de processos.
                 </p>
 
-                <h1 className="titleSection services text-[3.5rem] uppercase text-bold 
-                    text-transparent mt-12">
+                <h1 className="titleSection services text-[2.5rem] uppercase text-bold 
+                    text-transparent mt-4 md:mt-12">
                     Serviços
                 </h1>
 
-                <ul className="flex items-stretch w-screen font-light z-10 gap-8
+                <ul className="flex flex-col md:flex-row items-stretch w-[calc(100vw-2rem)] font-light z-10 md:gap-8
                     ">
-                    <li className="w-1/3 flex flex-col gap-4 py-4 relative cursor-pointer">
+                    <li className="md:w-1/3 flex flex-col gap-4 py-4 relative ">
                         <p className="uppercase flex items-center gap-4 text-[1.9rem] leading-none">
                             <HiAcademicCap/>
                             <span className="font-light"><b>Ead Corporativo</b><br/>customizado</span>
@@ -151,7 +151,7 @@ export default function Services(){
                         </Link>
                     </li>
 
-                    <li className="w-1/3 flex flex-col gap-4 py-4 relative cursor-pointer">
+                    <li className="md:w-1/3 flex flex-col gap-4 py-4 relative cursor-pointer">
                         <p className="uppercase flex items-center gap-4 text-[1.9rem] leading-none">
                             <HiOutlineAcademicCap/>
                             <span className="font-light"><b>Ead Corporativo</b><br/>SaaS</span>
@@ -184,27 +184,27 @@ export default function Services(){
                 </ul>
             </section>
 
-            <section id="lunnar-dev" className="snap-end bg-dev p-12 gap-4
-                w-screen h-screen flex items-start flex-col justify-center">
+            <section id="lunnar-dev" className="snap-end bg-dev p-4 md:p-12 gap-4
+                w-screen h-screen flex items-start flex-col pt-20 md:justify-center">
 
-                    <svg className={` cursor-pointer hover:opacity-100 transition-all max-w-[18rem]`}
+                    <svg className={`hover:opacity-100 transition-all max-w-[18rem]`}
                         id="logo-lunnar-dev-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 945 299">
                         <text id="lunnar" transform="translate(0 182)" fill="#fff" fontSize="170" fontFamily="Jost" fontWeight="300" letterSpacing="0.07em"><tspan x="0" y="0">LUNNAR</tspan></text>
                         <text id="_dev_" data-name="&lt;/dev&gt;" transform="translate(566 258)" fill="#fff" fontSize="110" fontFamily="Jost" fontWeight="500" letterSpacing="-0.07em"><tspan x="0" y="0">&lt;/DEV&gt;</tspan></text>
                     </svg>
 
-                    <p className="text-2xl font-light">
+                    <p className="text-1xl font-light">
                         Mapear, Analisar e Criar Planos de Ação com Dados é o Diferencial Competitivo que fará seu negócio decolar. Desenvolvemos softwares sob demanda, aplicativos e sites inteligentes com tecnologia de ponta.
                     </p>
 
-                    <h1 className="titleSection services text-[3.5rem] uppercase text-bold 
-                        text-transparent mt-12">
+                    <h1 className="titleSection services text-[2.5rem] uppercase text-bold 
+                        text-transparent mt-4 md:mt-12">
                         Serviços
                     </h1>
 
-                    <ul className="flex items-stretch w-[calc(100vw-6rem)] font-light z-10 gap-8
+                    <ul className="flex flex-col md:flex-row items-stretch w-[calc(100vw-2rem)] font-light z-10 md:gap-8
                         ">
-                        <li className="w-1/3 flex flex-col gap-4 py-4 relative cursor-pointer">
+                        <li className="md:w-1/3 flex flex-col gap-4 py-4 relative cursor-pointer">
                             <p className="uppercase flex items-center gap-4 text-[1.9rem] leading-none">
                                 <MdDashboard/>
                                 <span className="font-light"><b>Sistema</b><br/>customizado</span>
@@ -237,7 +237,7 @@ export default function Services(){
                             </Link>
                         </li>
 
-                        <li className="w-1/3 flex flex-col gap-4 py-4 relative cursor-pointer">
+                        <li className="md:w-1/3 flex flex-col gap-4 py-4 relative cursor-pointer">
                             <p className="uppercase flex items-center gap-4 text-[1.9rem] leading-none">
                                 <FiSmartphone/>
                                 <span className="font-light"><b>Aplicativo</b><br/>Multiplataforma</span>
@@ -263,7 +263,7 @@ export default function Services(){
                             </Link>
                         </li>
 
-                        <li className="w-1/3 flex flex-col gap-4 py-4 relative ">
+                        <li className="hidden md:w-1/3 md:flex flex-col gap-4 py-4 relative ">
                             <p className="uppercase flex items-center gap-4 text-[1.9rem] leading-none">
                                 <MdOutlineScreenSearchDesktop/>
                                 <span className="font-light"><b>Sites</b><br/>Inteligentes</span>

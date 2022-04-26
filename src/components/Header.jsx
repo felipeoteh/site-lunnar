@@ -1,7 +1,13 @@
 import Link from "next/link"
 import { FiToggleLeft, FiMenu } from "react-icons/fi"
+import { MdClose } from "react-icons/md"
+import { useState } from "react"
+
 
 export default function Header( {isScroll} ){
+
+    const [isOpen, setIsOpen ] = useState(false)
+
     return(
         <header className={` ${isScroll ? "bg-primary" : null}
             text-xl font-normal flex p-6 px-12 justify-between z-10 fixed w-screen`}>
@@ -14,32 +20,38 @@ export default function Header( {isScroll} ){
                 </Link>
             </div>
 
-            <ul className="hidden gap-4 items-center text-white">
+            <ul className={`${isOpen ? 
+                "flex flex-col items-center justify-center gap-4 absolute left-0 top-0 w-screen h-screen bg-[rgba(7,179,199,.90)] opacity-100 visible" 
+                : "opacity-0 invisible absolute"} 
+                transition-all  text-white text-3xl font-light`}>
+
+                <MdClose onClick={ () => setIsOpen(isOpen => !isOpen) }
+                    className="w-10 h-10 absolute top-4 right-4 "/>
+
                 <Link href="#solutions">
-                    <li>Soluções</li>
+                    <li onClick={ () => setIsOpen(isOpen => !isOpen) }>Soluções</li>
                 </Link>
                 <Link href="#cases">
-                    <li>Cases</li>
+                    <li onClick={ () => setIsOpen(isOpen => !isOpen) }>Cases</li>
                 </Link>
                 <Link href="#cluster-lunnar">
-                    <li>Ecossistema Lunnar</li>
+                    <li onClick={ () => setIsOpen(isOpen => !isOpen) }>Sobre a Lunnar</li>
                 </Link>
                 <Link href="#contact">
-                    <li>Contato</li>
+                    <li onClick={ () => setIsOpen(isOpen => !isOpen) }>Contato</li>
                 </Link>
                 
             </ul>
 
             <ul className="text-white flex items-center gap-4">
-                <li>
-                    <FiMenu className="
-                        
-                        w-9 h-9 cursor-pointer"/>
-                </li>
+                
+                <FiMenu className="w-10 h-10 p-2 rounded-full bg-primary cursor-pointer"
+                    onClick={ () => setIsOpen(isOpen => !isOpen) }/>
+
                 <li>
                     <FiToggleLeft className="
-                        
-                        w-6 h-6 cursor-pointer"/>
+                        p-2 rounded-full bg-primary
+                        w-10 h-10 cursor-pointer"/>
                 </li>
             </ul>
 

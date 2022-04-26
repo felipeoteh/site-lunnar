@@ -15,16 +15,16 @@ export default function Services(){
 
             <section className="snap-end w-screen h-screen flex flex-col items-start justify-center">
 
-                <h1 className="titleSection solutions text-[8.75rem] uppercase text-bold 
-                text-transparent ml-[-15px] ">
+                <h1 className="titleSection solutions  uppercase text-bold 
+                text-transparent text-[6rem] md:text-[8.75rem] ml-[-10px] md:ml-[-15px] ">
                     Soluções
                 </h1>
 
 
-                <ul className="flex items-stretch w-screen font-light z-10 h-[19rem] text-[1.9rem] leading-none
+                <ul className="flex flex-col md:flex-row items-stretch w-screen font-light z-10 md:h-[19rem] text-[1.9rem] leading-none
                     ">
                         
-                        <li className="bg-shop w-full flex items-center p-8 relative cursor-pointer">
+                        <li className="bg-shop w-full h-[11rem] md:h-auto flex items-center p-8 relative cursor-pointer">
                             <a href="#lunnar-shop">
                                 <p className="uppercase">
                                     <span className="font-bold">Mais Lucro</span><br/>
@@ -35,7 +35,7 @@ export default function Services(){
                         </li>
                         
                         
-                        <li className="bg-academy w-full flex items-center p-8 relative cursor-pointer">
+                        <li className="bg-academy w-full h-[11rem] md:h-auto flex items-center p-8 relative cursor-pointer">
                             <a href="#lunnar-academy">
                                 <p className="uppercase">
                                     <span className="font-bold">Mais Lucro</span><br/>
@@ -45,7 +45,7 @@ export default function Services(){
                             </a>
                         </li>  
                          
-                        <li className="bg-dev w-full flex items-center p-8 relative cursor-pointer">
+                        <li className="bg-dev w-full h-[11rem] md:h-auto flex items-center p-8 relative cursor-pointer">
                             <a href="#lunnar-dev">
                                 <p className="uppercase">
                                     <span className="font-bold">Mais Lucro</span><br/>

@@ -10,7 +10,7 @@ export default function Header( {isScroll} ){
 
     return(
         <header className={` ${isScroll ? "bg-primary" : null}
-            text-xl font-normal flex p-6 px-12 justify-between z-10 fixed w-screen`}>
+            text-xl font-normal flex p-6 md:px-12 justify-between z-30 fixed w-screen`}>
 
             <div>
                 <Link href="/">

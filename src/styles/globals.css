@@ -76,3 +76,7 @@ html{
     -webkit-text-stroke-width: 2px !important;
   }
 }
+
+.titleSection.services{
+  -webkit-text-stroke-width: 2px !important;
+}

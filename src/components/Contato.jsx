@@ -18,7 +18,7 @@ export default function Contact(){
 
                         <ul className="text-4xl font-light px-4
                             flex flex-col md:flex-row w-full max-w-[600px] self-center gap-8 items-center justify-content-stretch">
-                            <a target="_blank" href="https://wa.me/5541997652730?text=Ol%C3%A1%2C%20vim%20pelo%20site!">
+                            <a href="https://wa.me/5541997652730?text=Ol%C3%A1%2C%20vim%20pelo%20site!">
                                 <li className="w-full flex p-4 md:p-8 border relative">
                                     <p>
                                         <span className="font-medium">Fale agora </span>pelo Whatsapp
@@ -40,7 +40,7 @@ export default function Contact(){
                         </p>
 
                         <ul className="flex w-full max-w-screen-xl self-center gap-6 px-4" >
-                            <a href="https://www.instagram.com/lunnar.digital/" target="_blank">
+                            <a href="https://www.instagram.com/lunnar.digital/" >
                                 <li className="p-4 border cursor-pointer">
                                     <FiInstagram className="w-8 h-8 stroke-[1px]"/>
                                 </li>

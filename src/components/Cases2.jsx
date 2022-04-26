@@ -34,7 +34,7 @@ export default function Cases2(){
     return(
         <>
             <div id="cases" className="snap-start relative
-                flex items-start bg-[#0092A3] h-screen w-screen index-0
+                flex items-start bg-[#0092A3] h-[120vh] w-screen index-0
                 justify-center pt-20 md:pt-0 text-white flex-col
             " >                
 

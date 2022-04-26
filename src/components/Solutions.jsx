@@ -62,7 +62,7 @@ export default function Services(){
                 </section>
 
                 <section id="lunnar-shop" className="snap-start bg-shop p-4 md:p-12 gap-4
-                        w-screen h-screen flex items-start flex-col justify-center">
+                        w-screen h-[120vh] flex items-start flex-col justify-center">
 
                     <img src="/logo-lunnar-shop-white.svg" className="max-w-[18rem]"  />
 
@@ -116,7 +116,7 @@ export default function Services(){
                 </section>
 
                 <section id="lunnar-academy" className="snap-start bg-academy p-4 md:p-12 gap-4
-                    w-screen h-screen flex items-start flex-col justify-center">
+                    w-screen h-[120vh] flex items-start flex-col justify-center">
 
                     <img src="/logo-lunnar-academy-white.svg" className="max-w-[18rem]"  />
 
@@ -184,7 +184,7 @@ export default function Services(){
                 </section>
 
                 <section id="lunnar-dev" className="snap-end bg-dev p-4 md:p-12 gap-4
-                    w-screen h-screen flex items-start flex-col pt-20 md:justify-center">
+                    w-screen h-[120vh] flex items-start flex-col pt-20 md:justify-center">
 
                         <svg className={`hover:opacity-100 transition-all max-w-[18rem]`}
                             id="logo-lunnar-dev-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 945 299">

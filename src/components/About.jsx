@@ -2,7 +2,7 @@ export default function About(){
     return(
         
         <div id="cluster-lunnar" className="snap-start relative text-[#00707C]
-                flex flex-col justify-center items-start bg-white h-screen w-screen index-0 
+                flex flex-col justify-center items-start bg-white h-[120vh] w-screen index-0 
             " >
 
                 <h1 className="titleSection about  uppercase text-bold 
@@ -27,7 +27,7 @@ export default function About(){
                                     Deixe nos saber como podemos lhe ajudar! 
                                 </p>
                                 <small>
-                                    Felipe Otelakoski / Cofundador Grupo Lunnar
+                                    Felipe Otelakoski / Cofundador Lunnar
                                 </small>
                             </li>
                     </ul>

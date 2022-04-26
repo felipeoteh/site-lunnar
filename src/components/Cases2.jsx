@@ -35,19 +35,21 @@ export default function Cases2(){
         <>
             <div id="cases" className="snap-start relative
                 flex items-start bg-[#0092A3] h-screen w-screen index-0
-                justify-center text-white flex-col md:gap-12
+                justify-center pt-20 md:pt-0 text-white flex-col
             " >                
 
                 <h1 className="titleSection uppercase text-bold 
-                    text-transparent text-[6rem] md:text-[8.75rem] ml-[-10px] md:ml-[-15px]">
+                    text-transparent text-[5rem] md:text-[8.75rem] ml-[-10px] md:ml-[-15px]">
                     Cases
                 </h1>
 
-                <div className="flex md:flex-col flex-wrap w-full md:w-4/5 mb-[-10rem] md:self-end p-4 md:pr-12">
+                <div className="flex h-[35rem] md:h-[27rem]
+                    md:flex-row md:flex-nowrap w-full items-center
+                    md:w-4/5 md:self-end p-4 md:pr-12">
                     
-                    <div className="w-2/4 flex">
+                    <div className="hidden w-2/5 md:w-1/5 md:flex">
 
-                        <div className={`w-full flex items-center flex-col gap-8`}>
+                        <div className={`w-full md:flex items-center flex-col gap-4 md:gap-8`}>
                             <img onClick={ () => { changeAcordion(1) } } 
                                 src="/logo-lunnar-shop-white.svg" className={` 
                                 ${ (acordion == 1) ? `acordionOpen opacity-100` : `opacity-50` } 
@@ -71,7 +73,7 @@ export default function Cases2(){
 
                     </div>
 
-                    <div className="w-2/4 md:w-[5rem] flex flex-col items-center justify-center gap-4">
+                    <div className="md:w-[5rem] flex flex-col items-center justify-center gap-4">
                         
                         <div onClick={ () => { changeAcordion(acordion - 1) } }
                             className="flex items-center justify-center cursor-pointer 
@@ -97,7 +99,7 @@ export default function Cases2(){
 
                                 <img className="w-[8rem] mb-4" src="https://ninho.digital/wp-content/themes/ninho_site/assets/img/logo_branca.svg" alt="" />
 
-                                <h1 className="text-4xl mb-4 font-light">"são super atenciosos e cuidam dos mínimos detalhes, com um entrega excelente...."</h1>
+                                <h1 className="text-3xl md:text-4xl mb-4 font-light">"são super atenciosos e cuidam dos mínimos detalhes, com um entrega excelente...."</h1>
 
                                 <p className="font-light">
                                     "Fizemos um projeto muito especial e bem desafiador em parceria com a Lunnar Digital, que foi um desenvolvimento de uma Loja TrayCorp para vendas de resinas para impressoras 3D. O atendimento da Lunnar é excelente, são super atenciosos e cuidam dos mínimos detalhes, com um entrega excelente. O projeto foi um sucesso e espero que essa parceria renda muitos outros cases.". 
@@ -119,7 +121,7 @@ export default function Cases2(){
 
                                 <img className="w-[8rem] mb-4" src="https://hubpaladio.com.br/wp-content/uploads/2022/01/logo-home-2048x613.png" alt="" />
 
-                                <h1 className="text-4xl mb-4 font-light">"é mais do que uma empresa de software..."</h1>
+                                <h1 className="text-3xl md:text-4xl mb-4 font-light">"é mais do que uma empresa de software..."</h1>
 
                                 <p className="font-light">
                                     "O projeto de desenvolvido do Academy da nossa empresa teve todo o apoio e suporte necessário para uma excelente execução, a equipe sempre disposta em trazer ideias e funcionalidades que tornaram o aprendizado dos nossos alunos muito mais eficiente no dia-dia. É muito mais do que apenas uma empresa de Software a Lunnar realmente se importa em resolver os problemas de seus parceiros". 
@@ -143,7 +145,7 @@ export default function Cases2(){
 
                                     <img className="w-[8rem] mb-4" src="https://agencianascer.com.br/wp-content/uploads/2022/03/logo-nascer.png" alt="" />
 
-                                    <h1 className="text-4xl mb-4 font-light">"tínhamos apenas uma ideia e eles tornaram realidade superando as expectativas..."</h1>
+                                    <h1 className="text-3xl md:text-4xl mb-4 font-light">"tínhamos apenas uma ideia e eles tornaram realidade superando as expectativas..."</h1>
 
                                     <p className="font-light">
                                         "A Lunnar, foi uma peça fundamental para tirar o site do papel, tínhamos apenas uma ideia e eles tornaram realidade superando as expectativas, sem falar que todo o trabalho foi categoricamente cumprido dentro do prazo! O Felipe é um dos melhores gestores de projetos que tivemos o prazer de trabalhar.". 
@@ -161,7 +163,7 @@ export default function Cases2(){
 
                                     <img className="w-[8rem] mb-4" src="https://ninho.digital/wp-content/themes/ninho_site/assets/img/logo_branca.svg" alt="" />
 
-                                    <h1 className="text-4xl mb-4 font-light">"São super atenciosos, entregas dentro do prazo e com muita qualidade..."</h1>
+                                    <h1 className="text-3xl md:text-4xl mb-4 font-light">"São super atenciosos, entregas dentro do prazo e com muita qualidade..."</h1>
 
                                     <p className="font-light">
                                         "Já trabalho em parceria com o Felipe da Lunnar há muitos anos com desenvolvimentos de sites e recomendo! São super atenciosos, entregas dentro do prazo e com muita qualidade. Experts em Elementor e Wordpress!". 

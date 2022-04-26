@@ -6,7 +6,7 @@ export default function About(){
             " >
 
                 <h1 className="titleSection about  uppercase text-bold 
-                text-transparent md:mb-[2rem] text-[5rem] md:text-[8.75rem] ml-[-10px] md:ml-[-15px] leading-none">
+                text-transparent md:mb-[2rem] text-[4rem] md:text-[8.75rem] ml-[-10px] md:ml-[-15px] leading-none">
                     SOBRE A LUNNAR
                 </h1>
 
@@ -17,7 +17,7 @@ export default function About(){
                     </h4>
 
                     <ul className="flex flex-col md:flex-row gap-6 w-full max-w-[910px]">
-                        <img className="rounded-full border-2 border-[#00707C] w-[9rem] h-[9rem] md:w-[13rem] md:h-[13rem]" 
+                        <img className="rounded-full border-2 border-[#00707C] hidden md:block w-[13rem] h-[13rem]" 
                             src="/foto-perfil-felipe.png" alt="" />
                             <li className="flex flex-col gap-6 font-extralight text-2xl">
                                 <p>

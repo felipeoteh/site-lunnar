@@ -13,7 +13,7 @@ export default function Banner(){
 
                 <div className="w-full md:w-2/3">
                     <h1 className="text-white text-6xl md:text-7xl font-medium uppercase tracking-tight">
-                        Acoplamos tecnologia em empresas para aumentar o lucro operacional.
+                        A tecnologia que sua empresa precisa para aumentar o lucro.
                     </h1>
                     <Link href="#solutions">
                         <p className="flex items-center gap-4 cursor-pointer hover:opacity-90 transition-all 
@@ -23,9 +23,7 @@ export default function Banner(){
                     </Link>
                 </div>
 
-                <div>
-
-                </div>
+                <div></div>
 
             </div>  
         

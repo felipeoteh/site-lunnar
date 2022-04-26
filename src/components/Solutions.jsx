@@ -14,7 +14,7 @@ export default function Services(){
     return(
         <>
             <div id="solutions" className="scroll-smooth snap-x overflow-x-scroll
-                snap-start relative flex
+                snap-start relative flex snap-mandatory
                 bg-white h-screen w-screen index-0
                  text-white
             " >
@@ -67,8 +67,8 @@ export default function Services(){
 
                 <img src="/logo-lunnar-shop-white.svg" className="max-w-[18rem]"  />
 
-                <p className="text-2xl w-2/3 font-light">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus, nulla in mollis consectetur, ante elit vestibulum ante, ac fermentum tellus velit id leo. Ut et varius dolor.
+                <p className=" text-2xl font-light">
+                    Vender online se tornou uma necessidade e viabilizar essa canal de vendas em seu negócio está mais acessível que você imagina. Em menos de 30 dias é possível colocar sua loja virtual no ar.
                 </p>
 
                 <h1 className="titleSection services text-[3.5rem] uppercase text-bold 
@@ -78,13 +78,14 @@ export default function Services(){
 
                 <ul className="flex items-stretch w-screen font-light z-10 gap-8
                     ">
-                    <li className="w-1/4 flex flex-col gap-4 py-4 relative cursor-pointer">
+                    <li className="w-1/3 flex flex-col gap-4 py-4 relative cursor-pointer">
                         <p className="uppercase flex items-center gap-4 text-[1.9rem] leading-none">
                             <FiShoppingCart/>
                             <span className="font-light"><b>Implantação</b><br/>de e-commerce</span>
                         </p>
                         <p className="text-[1.2rem]">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus, nulla in mollis consectetur, ante elit vestibulum ante, ac fermentum tellus velit id leo. Ut et varius dolor. 
+                            Colocamos sua loja no ar em poucos dias no modelo mvp e também implantação 
+                            corporativa de alto impacto. Platafomas: Tray Commerce e Tray Corp by Fbits.
                         </p>
 
                         <Link href="#contact">
@@ -95,13 +96,13 @@ export default function Services(){
                         </Link>
                     </li>
 
-                    <li className="w-1/4 flex flex-col gap-4 py-4 relative cursor-pointer">
+                    <li className="w-1/3 flex flex-col gap-4 py-4 relative cursor-pointer">
                         <p className="uppercase flex items-center gap-4 text-[1.9rem] leading-none">
                             <FiShoppingBag/>
                             <span className="font-light"><b>Marketplace de</b><br/>Negócios Locais</span>
                         </p>
                         <p className="text-[1.2rem]">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus, nulla in mollis consectetur, ante elit vestibulum ante, ac fermentum tellus velit id leo. Ut et varius dolor. 
+                            Plataforma SaaS de Marketplace para negócios locais.  
                         </p>
 
                         <Link href="#contact">
@@ -120,8 +121,10 @@ export default function Services(){
 
                 <img src="/logo-lunnar-academy-white.svg" className="max-w-[18rem]"  />
 
-                <p className="text-2xl w-2/3 font-light">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus, nulla in mollis consectetur, ante elit vestibulum ante, ac fermentum tellus velit id leo. Ut et varius dolor.
+                <p className="text-2xl font-light">
+                    Você sabia que um colaborador desengajado chega a custar 7x o próprio salário ao longo do tempo? 
+                    Não deixe isso acontecer na sua empresa! Aumente o engajamento dos seus colaboradores com as soluções de academy 
+                    customizado ou no modelo saas. Ideal para aumento de engajamento, gamificação e inventario de processos.
                 </p>
 
                 <h1 className="titleSection services text-[3.5rem] uppercase text-bold 
@@ -131,13 +134,13 @@ export default function Services(){
 
                 <ul className="flex items-stretch w-screen font-light z-10 gap-8
                     ">
-                    <li className="w-1/4 flex flex-col gap-4 py-4 relative cursor-pointer">
+                    <li className="w-1/3 flex flex-col gap-4 py-4 relative cursor-pointer">
                         <p className="uppercase flex items-center gap-4 text-[1.9rem] leading-none">
                             <HiAcademicCap/>
                             <span className="font-light"><b>Ead Corporativo</b><br/>customizado</span>
                         </p>
                         <p className="text-[1.2rem]">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus, nulla in mollis consectetur, ante elit vestibulum ante, ac fermentum tellus velit id leo. Ut et varius dolor. 
+                            Academy Corporativo voltado para empresas para mais de 200 colaboradores onde é 100% customizável conforme as necessidades. 
                         </p>
 
                         <Link href="#contact">
@@ -148,13 +151,13 @@ export default function Services(){
                         </Link>
                     </li>
 
-                    <li className="w-1/4 flex flex-col gap-4 py-4 relative cursor-pointer">
+                    <li className="w-1/3 flex flex-col gap-4 py-4 relative cursor-pointer">
                         <p className="uppercase flex items-center gap-4 text-[1.9rem] leading-none">
                             <HiOutlineAcademicCap/>
                             <span className="font-light"><b>Ead Corporativo</b><br/>SaaS</span>
                         </p>
                         <p className="text-[1.2rem]">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus, nulla in mollis consectetur, ante elit vestibulum ante, ac fermentum tellus velit id leo. Ut et varius dolor. 
+                            Academy ideal para empresas apartir de 06 colaboradores.
                         </p>
 
                         
@@ -184,10 +187,14 @@ export default function Services(){
             <section id="lunnar-dev" className="snap-end bg-dev p-12 gap-4
                 w-screen h-screen flex items-start flex-col justify-center">
 
-                    <img src="/logo-lunnar-dev-white.svg" className="max-w-[18rem]"  />
+                    <svg className={` cursor-pointer hover:opacity-100 transition-all max-w-[18rem]`}
+                        id="logo-lunnar-dev-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 945 299">
+                        <text id="lunnar" transform="translate(0 182)" fill="#fff" fontSize="170" fontFamily="Jost" fontWeight="300" letterSpacing="0.07em"><tspan x="0" y="0">LUNNAR</tspan></text>
+                        <text id="_dev_" data-name="&lt;/dev&gt;" transform="translate(566 258)" fill="#fff" fontSize="110" fontFamily="Jost" fontWeight="500" letterSpacing="-0.07em"><tspan x="0" y="0">&lt;/DEV&gt;</tspan></text>
+                    </svg>
 
-                    <p className="text-2xl w-2/3 font-light">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus, nulla in mollis consectetur, ante elit vestibulum ante, ac fermentum tellus velit id leo. Ut et varius dolor.
+                    <p className="text-2xl font-light">
+                        Mapear, Analisar e Criar Planos de Ação com Dados é o Diferencial Competitivo que fará seu negócio decolar. Desenvolvemos softwares sob demanda, aplicativos e sites inteligentes com tecnologia de ponta.
                     </p>
 
                     <h1 className="titleSection services text-[3.5rem] uppercase text-bold 
@@ -195,15 +202,15 @@ export default function Services(){
                         Serviços
                     </h1>
 
-                    <ul className="flex items-stretch w-screen font-light z-10 gap-8
+                    <ul className="flex items-stretch w-[calc(100vw-6rem)] font-light z-10 gap-8
                         ">
-                        <li className="w-1/4 flex flex-col gap-4 py-4 relative cursor-pointer">
+                        <li className="w-1/3 flex flex-col gap-4 py-4 relative cursor-pointer">
                             <p className="uppercase flex items-center gap-4 text-[1.9rem] leading-none">
                                 <MdDashboard/>
                                 <span className="font-light"><b>Sistema</b><br/>customizado</span>
                             </p>
                             <p className="text-[1.2rem]">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus, nulla in mollis consectetur, ante elit vestibulum ante, ac fermentum tellus velit id leo. Ut et varius dolor. 
+                                Quem faz gestão de negócios orientado a dados sabe a importância de um bom sistema azeitado e voltado para seu negócio.  
                             </p>
 
                             <ul className="flex items-center gap-4">
@@ -230,13 +237,13 @@ export default function Services(){
                             </Link>
                         </li>
 
-                        <li className="w-1/4 flex flex-col gap-4 py-4 relative cursor-pointer">
+                        <li className="w-1/3 flex flex-col gap-4 py-4 relative cursor-pointer">
                             <p className="uppercase flex items-center gap-4 text-[1.9rem] leading-none">
                                 <FiSmartphone/>
                                 <span className="font-light"><b>Aplicativo</b><br/>Multiplataforma</span>
                             </p>
                             <p className="text-[1.2rem]">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus, nulla in mollis consectetur, ante elit vestibulum ante, ac fermentum tellus velit id leo. Ut et varius dolor. 
+                                Disponibilize um aplicativo para seus clientes. Desenvolvemos aplicativos multiplataforma (Android e IOS).
                             </p>
                             
                             <ul className="flex items-center gap-4">
@@ -256,13 +263,13 @@ export default function Services(){
                             </Link>
                         </li>
 
-                        <li className="w-1/4 flex flex-col gap-4 py-4 relative cursor-pointer">
+                        <li className="w-1/3 flex flex-col gap-4 py-4 relative ">
                             <p className="uppercase flex items-center gap-4 text-[1.9rem] leading-none">
                                 <MdOutlineScreenSearchDesktop/>
-                                <span className="font-light"><b>Desenvolvimento</b><br/>de Site</span>
+                                <span className="font-light"><b>Sites</b><br/>Inteligentes</span>
                             </p>
                             <p className="text-[1.2rem]">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus, nulla in mollis consectetur, ante elit vestibulum ante, ac fermentum tellus velit id leo. Ut et varius dolor. 
+                                Desenvolvemos sites de alto impacto com tecnologia de ponta.
                             </p>
 
                             <Link href="#contact">
